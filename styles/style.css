@@ -1,5 +1,7 @@
 * {
     font-family: 'Work Sans', sans-serif;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .primary-btn {
@@ -72,24 +74,27 @@ nav li a {
 
 /* main style */
 main {
-    width: 1440px;
-    margin: 0 auto;
+    width: 95%;
+    margin: 70px auto;
 }
 
 /* feature container */
 .feature-container{
     display: flex;
     align-items: center;
+
 }
 
 .feature-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.3rem;
+    gap: 1.5rem;
+    padding-left: 80px;
 }
 
+
 .feature-content{
-    padding-right: 200px;
+    padding-right: 70px;
     padding-left: 70px;
 }
 
@@ -122,21 +127,31 @@ main {
         padding: 20px;
     }
 
-    nav{
+    nav,
+    .feature-container
+    {
         flex-direction: column;
+    }
+    .feature-img-container{
+        grid-template-columns: 1fr;
+        padding-right: 20px;
     }
 }
 
 /* responsive media queries for tablet*/
 @media screen and (min-width: 577px) and (max-width: 992px) {
 
-    nav{
+    nav,
+    .feature-container
+    {
         flex-direction: column;
     };
 
     header {
         padding: 50px
     }
+
+    
     
 }
 
